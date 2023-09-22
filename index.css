@@ -7,9 +7,6 @@
 
 
     
-
-
-
 .container{
     width: 100vw;
     height: 100vh;
@@ -22,8 +19,8 @@
 
 
 .msg{
-    width: 750px;
-    height: 80px;
+    width: 600px;
+    height: 70px;
     border-radius: 10px;
     background-color: #5d6d7ed2;
     display: flex;
@@ -62,7 +59,7 @@ input[type=text]:focus{
 }
 
 .edition{
-    width: 800px;
+    width: 600px;
     height: 500px;
     border-radius: 20px;
     background-color: #5D6D7ed2;
@@ -70,12 +67,12 @@ input[type=text]:focus{
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    overflow: scroll;
+    overflow:auto;
 }
 
 .divStyle{
     width: 80%;
-    /* height: 60px; */
+    height: 60px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
@@ -126,8 +123,8 @@ input[type=text]:focus{
 }
 
 .editerDiv{
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 30%;
     background-color: #2C3E50;
     border-radius: 15px;
     position: absolute;
@@ -194,3 +191,47 @@ input[type=text]:focus{
     cursor: pointer;
 }
 
+
+@media screen and (max-width: 650px){
+    .msg{
+        width: 500px;
+    }
+
+    .edition{
+        width: 500px;
+    }
+
+    .editerDiv{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .msg{
+        /* width: 350px; */
+        width: 85%;
+    }
+
+    .edition{
+        width: 85%;
+    }
+
+    .editerDiv{
+        flex-direction: column;
+    }
+
+    .btnDivs{
+        width: auto;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .btnDivs button{
+        width: 60px;
+        height: 20px;
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+    
+}
